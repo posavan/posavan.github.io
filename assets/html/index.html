@@ -33,44 +33,25 @@
         <header class="siteHeader" id="SiteHeader">
             <h1 class="siteHeader_title">Nikolai Posavatz</h1>
             <p class="siteHeader_label">Software Developer</p>
-            <nav class="siteHeader_nav" x-data="">
-                <ol>
-                    <li :class="{ 'is-selected': $store.ui.currentPath === '/' }" class="is-selected">
-                        <div class="_dot">●</div><a class="_text" href="/">Home</a>
-                    </li>
-                    <li :class="{ 'is-selected': $store.ui.currentPath === '/projects/' }" class="">
-                        <div class="_dot">●</div><a class="_text" href="/projects/">Projects</a>
-                    </li>
-                    <li :class="{ 'is-selected': $store.ui.currentPath === '/info/' }">
-                        <div class="_dot">●</div><a class="_text" href="/info/">Info</a>
-                    </li>
-                    <li :class="{ 'is-selected': $store.ui.currentPath === '/contact/' }">
-                        <div class="_dot">●</div><a class="_text" href="/contact/">Contact</a>
-                    </li>
-                </ol>
-            </nav>
+            <nav class="siteHeader_nav" x-data=""></nav>
         </header>
         <main class="content" id="Content" data-scroll="area">
             <div class="content_inner" data-scroll="target" style="transform: translate3d(0px, 0px, 0px);">
-                <section class="page" data-page="home" style="display: block; opacity: 1;">
+                <section class="page" data-page="home" style="display: none; opacity: 0;">
                     <div class="page_content home">
                         <p class="home_aboutme">
-                            <span>Born in 1994</span><span>in Osaka, Japan.</span><span>I believe</span><span>web design</span>
-                            <span>can be more</span><span>diverse and inspiring.</span><span>With a mission</span>
-                            <span>to present</span><span>the possibilities</span><span>of web design,</span>
-                            <span>I am pursuing</span><span>new expressions</span><span>through experiments</span>
-                            <span>and thoughts.</span>
+                            <span></span>
                         </p>
                     </div>
                 </section>
-                <section class="page" data-page="projects" style="display: none; opacity: 0;">
+                <section class="page" data-page="projects" style="display: block; opacity: 1;">
                     <div class="page_content project">
                         <div class="project_section">
                             <h2 class="project_heading">■ Projects</h2>
                             <div class="project_list">
-                                <a class="project_item text-btn" href="https://ily-girl.mikapikazo.info" target="_blank" rel="noopener">
-                                    <div class="project_title">ILY GIRL</div>
-                                    <div class="project_info">2023 / Commission / Special</div>
+                                <a class="project_item text-btn" href="breakout.html" target="_blank" rel="noopener">
+                                    <div class="project_title">Breakout JavaScript Game</div>
+                                    <div class="project_info">Simple browser game of breakout made with JavaScript</div>
                                 </a>
                             </div>
                         </div>
