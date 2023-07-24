@@ -12,7 +12,7 @@ let dy = -2;
 let count = 0;
 let rightPressed = false;
 let leftPressed = false;
-const brickRowCount = 3;
+const brickRowCount = 4;
 const brickColumnCount = 5;
 const brickWidth = 75;
 const brickHeight = 20;
@@ -99,14 +99,14 @@ function collisionDetection() {
 
 // draws score
 function drawScore() {
-    ctx.font = "16px Arial";
+    ctx.font = "Bold 16px Arial";
     ctx.fillStyle = "green";
     ctx.fillText(`Score: ${score}`, 8, 20);
 };
 
 // track lives
 function drawLives() {
-    ctx.font = "16px Arial";
+    ctx.font = "Bold 16px Arial";
     ctx.fillStyle = "red";
     ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
 };

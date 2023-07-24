@@ -33,15 +33,6 @@ ol,ul{list-style:none}
 @media(prefers-color-scheme: dark){
     :root{--c-bg: hsl(0, 0%, 5%);
     --c-text: hsl(0, 0%, 95%)}}
-@font-face{
-    font-family:"Neue Montreal";
-    font-weight:200;src:url("/assets/font/PPNeueMontreal-Thin.woff2") format("woff2")}
-@font-face{
-    font-family:"Neue Montreal";
-    font-weight:400;src:url("/assets/font/PPNeueMontreal-Book.woff2") format("woff2")}
-@font-face{
-    font-family:"Neue Montreal";
-    font-weight:600;src:url("/assets/font/PPNeueMontreal-SemiBold.woff2") format("woff2")}
 html,body{height:100%}
 body{
     background-color:var(--c-bg);
@@ -299,4 +290,3 @@ body{
 .contact_text{display:block}
 .contact_text+.contact_text{margin-top:1em}
 .contact_text .jp{font-family:"Neue Montreal","Hiragino Sans",Meiryo,sans-serif}
-/*# sourceMappingURL=style.css.map */
